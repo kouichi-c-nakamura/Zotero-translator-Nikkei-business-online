@@ -43,7 +43,7 @@ function doWeb(doc, url) {
 
 			// Zotero.debug(items);
 
-		} else if (url.search(/\/atcl\/\w+\/\d{2}\/\d{9}\/$/) > -1) {
+		} else if (url.search(/\/atcl\/\w+\/\d{2}\/\d{9}(/\d{9}){0,1}\/$/) > -1) {
 			//http://business.nikkeibp.co.jp/atcl/report/16/092700167/
 
 			var href = ZU.xpath(doc,'//ul[@id="Contents"]/li[contains(@class, "FREE2NBO-v")]/p/a/@href');
